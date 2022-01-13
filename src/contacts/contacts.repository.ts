@@ -76,8 +76,6 @@ export class ContactsRepository extends Repository<Contact> {
     }
 
     if (editContactDto.favorite) {
-      console.log('contact.favorite', contact.favorite);
-      console.log('editContactDto.favorite', editContactDto.favorite);
       contact.favorite = editContactDto.favorite;
     }
 
